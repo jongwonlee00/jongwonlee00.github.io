@@ -1,3 +1,21 @@
+
+/* Add a rotating animation to the self-image */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the self-image */
+#self-image {
+    animation: rotate 4s infinite linear;
+    /* Rotate the image infinitely in 4 seconds */
+}
+
 /* Custom styles for <h1> tag */
 h1 {
     font-size: 2rem;
