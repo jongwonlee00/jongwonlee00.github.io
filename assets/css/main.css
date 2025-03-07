@@ -57,7 +57,20 @@ ol, ul {
     object-fit: cover; /* Ensure the images cover the area without distortion */
 }
 
-
+@media (max-width: 768px) {
+	body {
+	  font-size: 18px; /* Increase the base font size */
+	}
+	
+	.image-grid {
+	  grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+	}
+  
+	.image-grid .image img {
+	  height: auto;
+	}
+  }
+  
 
 
 #playButton {
