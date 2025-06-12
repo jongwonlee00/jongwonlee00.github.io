@@ -38,28 +38,35 @@ ol, ul {
 	list-style: none;
 }
 
-.image-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 1rem;
-	padding: 1rem;
+.collage {
+	max-width: 800px;
+	margin-inline: auto;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-areas:
+	  ".. two two two three four .. .."
+	  "one two two two five five six .."
+	  ".. two two two five five seven eight"
+	  "nine ten eleven eleven twelve .. .. .."
+	  ".. .. eleven eleven .. .. .. ..";
   }
   
-  .image-grid .image.main {
-	width: 50px;
-	height: 50px;
+  .collage > div {
 	overflow: hidden;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	border-radius: 0.5rem;
   }
   
-  .image-grid .image.main img {
+  .collage img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	display: block;
   }
+
+  
+
   
   
 
