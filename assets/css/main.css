@@ -47,19 +47,20 @@ ol, ul {
   }
   
   .image-grid .image.main {
-	flex: 1 1 300px; /* Grow/shrink, min width of 300px */
-	max-width: 32%;  /* Makes sure you get 3 images per row on wider screens */
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	width: 250px;
+	height: 250px;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   
   .image-grid .image.main img {
 	width: 100%;
-	height: auto;
-	display: block;
+	height: 100%;
 	object-fit: cover;
+	display: block;
   }
+  
   
 
 @media (max-width: 768px) {
