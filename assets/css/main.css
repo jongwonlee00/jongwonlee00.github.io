@@ -39,24 +39,17 @@ ol, ul {
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-    gap: 10px; /* Space between images */
-    margin-top: 20px;
-}
-
-.image-grid .image {
-    position: relative;
-    width: 100%;
-    height: 80%; 
-    overflow: hidden;
-}
-
-.image-grid .image img {
-    width: 100%;
-    height: 100%; /* Ensure all images fill the height of the grid item */
-    object-fit: cover; /* Ensure the images cover the area without distortion */
-}
+	display: flex;
+	justify-content: center;
+	gap: 1rem; /* Optional: adds spacing between images */
+	flex-wrap: wrap; /* Optional: wraps to next line on small screens */
+  }
+  
+  .image-grid .image.main img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+  }
 
 @media (max-width: 768px) {
 	body {
