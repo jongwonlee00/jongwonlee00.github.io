@@ -46,11 +46,9 @@ ol, ul {
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-areas:
-	  ".. two two two three four .. .."
-	  "one two two two five five six .."
-	  ".. two two two five five seven eight"
-	  "nine ten eleven eleven twelve .. .. .."
-	  ".. .. eleven eleven .. .. .. ..";
+	  "one two three four"
+	  "five six seven eight"
+	  ".. nine ten ..";
   }
   
   .collage > div {
@@ -59,8 +57,8 @@ ol, ul {
   }
   
   .collage img {
-	width: 100%;
-	height: 100%;
+	width: 75%;
+	height: 75%;
 	object-fit: cover;
 	display: block;
   }
