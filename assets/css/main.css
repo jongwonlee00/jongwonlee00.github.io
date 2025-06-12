@@ -40,16 +40,27 @@ ol, ul {
 
 .image-grid {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	gap: 1rem; /* Optional: adds spacing between images */
-	flex-wrap: wrap; /* Optional: wraps to next line on small screens */
+	gap: 1rem;
+	padding: 1rem;
+  }
+  
+  .image-grid .image.main {
+	flex: 1 1 300px; /* Grow/shrink, min width of 300px */
+	max-width: 32%;  /* Makes sure you get 3 images per row on wider screens */
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	overflow: hidden;
+	border-radius: 10px;
   }
   
   .image-grid .image.main img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
+	object-fit: cover;
   }
+  
 
 @media (max-width: 768px) {
 	body {
