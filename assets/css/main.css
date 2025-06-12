@@ -46,6 +46,7 @@ ol, ul {
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-areas:
+	  ".. .. .. .."
 	  "one two three four"
 	  "five six seven eight"
 	  ".. nine ten ..";
