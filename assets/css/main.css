@@ -48,8 +48,8 @@ ol, ul {
 	grid-template-areas:
 	  ".. .. .. .."
 	  "one two three four"
-	  "five six seven eight"
-	  ".. nine ten ..";
+	  "five six seven seven eight"
+	  "nine nine ten ten";
   }
   
   .collage > div {
