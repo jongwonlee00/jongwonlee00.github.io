@@ -39,18 +39,19 @@ ol, ul {
 }
 
 .collage {
-	max-width: 800px;
+	max-width: 1000px;
 	margin-inline: auto;
 	display: grid;
 	gap: 0.5rem;
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-areas:
-	  ".. two two two three four .. .."
-	  "one two two two five five six .."
-	  ".. two two two five five seven eight"
-	  "nine ten eleven eleven twelve .. .. .."
-	  ".. .. eleven eleven .. .. .. ..";
+	".. two two two three four .. .."
+	".. one one one five five six .."
+	".. two two two five five seven eight"
+	"nine ten eleven eleven twelve .. .. .."
+	".. .. eleven eleven .. .. .. ..";
+  
   }
   
   .collage > div {
